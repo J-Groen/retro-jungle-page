@@ -3,14 +3,13 @@
   import Hero from "./components/Hero.svelte";
   import Artists from "./components/Artists.svelte";
 
-  let playMusic = false;
+  let playMusic = true;
 
   $: console.log(playMusic);
 </script>
 
-{#if playMusic}
-  <audio src="/jungle.mp3" autoplay loop />
-{/if}
+
+<audio src="/jungle.mp3" autoplay loop bind:paused={playMusic} />
 <button on:click={() => (playMusic = !playMusic)}>
   {#if !playMusic}
     <img src="/Headphones.gif" />
