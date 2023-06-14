@@ -98,7 +98,7 @@
   }
 
   .image img {
-    width: 200%;
+    width: clamp(100px, 100%, 300px);
   }
 
   h2 {
