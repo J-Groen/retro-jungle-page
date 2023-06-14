@@ -107,7 +107,7 @@
 
   section {
     padding: 0 1rem;
-    background-image: url("../src/assets/artists.png");
+    background-image: url("/assets/artists.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
